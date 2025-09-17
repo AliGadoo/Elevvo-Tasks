@@ -71,9 +71,14 @@ a {
     height: 30px;
 }
 
+.toggle_container {
+    margin-left: 4px;
+}
+
 .toggle_btn {
     margin-bottom: 54px;
     padding: 5px;
+
 }
 
 .links_list {
