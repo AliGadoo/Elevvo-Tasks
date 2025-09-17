@@ -8,3 +8,12 @@ toggle_btn.onclick = () => {
     link.classList.toggle("expanded_links");
   }
 };
+
+sidebar.addEventListener("focusout", (e) => {
+  if (!sidebar.contains(e.relatedTarget)) {
+    sidebar.classList.remove("extended_sidebar");
+    for (const link of allLinks) {
+      link.classList.remove("expanded_links");
+    }
+  }
+});
