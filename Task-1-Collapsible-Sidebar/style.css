@@ -1,0 +1,72 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --sky-50: #F0F9FF;
+    --sky-100: #E0F2FE;
+    --sky-200: #BAE6FD;
+    --sky-300: #7DD3FC;
+    --sky-400: #38BDF8;
+    --sky-500: #0EA5E9;
+    --sky-600: #0284C7;
+    --sky-700: #0369A1;
+    --sky-800: #075985;
+    --sky-900: #0C4A6E;
+    --sky-950: #082F49;
+}
+
+body {
+    background-color: var(--sky-100);
+    color: var(--sky-900);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+.sidebar {
+    width: 80px;
+    padding: 16px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+    background: var(--sky-950);
+}
+
+.extended_sidebar {
+    width: 240px;
+
+}
+
+.icon {
+    color: var(--sky-50);
+    width: 40px;
+    height: 40px;
+}
+
+.toggle_btn {
+    margin-bottom: 54px;
+}
+
+.content {
+    padding: 16px;
+    font-size: 24px;
+}
