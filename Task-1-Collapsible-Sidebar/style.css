@@ -92,6 +92,7 @@ a {
     padding: 10px;
     margin-bottom: 12px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .links svg,
@@ -100,19 +101,19 @@ a {
 }
 
 .links span {
-    margin-left: 32px;
+    margin-left: 24px;
     opacity: 0;
     transition: margin-left 0.3s ease, opacity 0.3s ease;
 
 }
 
 .extended_sidebar .links span {
-    margin-left: 32px;
+    margin-left: 24px;
     opacity: 1;
 }
 
 .links:hover {
-    background: var(--sky-600);
+    background-color: var(--sky-600);
 }
 
 .expanded_links {
