@@ -20,6 +20,93 @@
 
 body {
     background: var(--emerald-300);
-    color: var(--emerald-950);
+    color: var(--emerald-900);
     font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    max-width: 1200px;
+    margin: 32px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.contact_box {
+    background-color: var(--emerald-100);
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 16px var(--emerald-500);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.main_title {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+}
+
+.field,
+.textarea_field {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+input,
+textarea {
+    border: none;
+    width: 100%;
+    padding: 16px 8px;
+    background-color: var(--emerald-50);
+    font-size: 16px;
+    border-radius: 8px;
+    outline: none;
+}
+
+textarea {
+    min-height: 120px;
+    max-height: 400px;
+    resize: none;
+}
+
+input:focus,
+textarea:focus {
+    box-shadow: 0px 2px 4px var(--emerald-500);
+}
+
+
+.field_label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 12px;
+    z-index: 999;
+    color: var(--emerald-500);
+    transition: all 0.3s ease;
+}
+
+.move_label_up {
+    top: -10px;
+    transform: none;
+    color: var(--emerald-800);
+}
+
+.textarea_label {
+    position: absolute;
+    z-index: 999;
+    top: 16px;
+    left: 12px;
+    transition: all 0.3s ease;
+    color: var(--emerald-500);
+}
+
+.textarea_label_up {
+    color: var(--emerald-800);
+    top: -10px;
 }

@@ -8,9 +8,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<!--  Subject, Message, and Submit button -->
+
 <body>
     <main>
-
+        <div class="contact_box">
+            <header>
+                <h1 class="main_title">CONTACT US</h1>
+                <p class="subtitle">Have questions? Fill out the form below </p>
+            </header>
+            <form action="">
+                <div class="field">
+                    <label class="field_label" for="fullName">Full Name</label>
+                    <input type="text" name="FullName" id="fullName">
+                </div>
+                <div class="field">
+                    <label class="field_label" for="userMail">Email</label>
+                    <input type="email" name="userMail" id="userMail">
+                </div>
+                <div class="field">
+                    <label class="field_label" for="userSubject">Subject</label>
+                    <input type="text" name="userSubject" id="userSubject">
+                </div>
+                <div class="textarea_field">
+                    <label class="textarea_label" for="userMessage">Message</label>
+                    <textarea name="userMessage" id="userMessage"></textarea>
+                </div>
+            </form>
+        </div>
     </main>
 
     <script src="main.js"></script>
