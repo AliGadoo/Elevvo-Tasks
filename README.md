@@ -25,4 +25,30 @@ The sidebar includes:
 
 ---
 
+## Task 2: Contact Form
+
+### 📌 Description
+
+This task focuses on building a responsive contact form that looks good across all screen sizes.
+
+The form includes:
+Full Name, Email Address, Subject, Message, Submit Button.
+
+Key points:
+
+* Clean and simple layout
+* Proper spacing between inputs
+* Responsive design for both phones and desktops
+
+### 🛠️ Tools & Technologies
+
+* **HTML**
+* **CSS**
+* **JavaScript**
+
+
+### 🚀 Live Demo
+
+[Click here to view the project](https://contact-form-elevvo.netlify.app/)
+
 ✨ Designed as part of **Elevvo Internship Tasks**.
