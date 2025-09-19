@@ -11,8 +11,10 @@ fields.forEach((input) => {
   });
 
   input.addEventListener("focusout", () => {
-    input.tagName == "INPUT"
-      ? label.classList.remove("move_label_up")
-      : label.classList.remove("textarea_label_up");
+    if (input.value == "") {
+      input.tagName == "INPUT"
+        ? label.classList.remove("move_label_up")
+        : label.classList.remove("textarea_label_up");
+    }
   });
 });

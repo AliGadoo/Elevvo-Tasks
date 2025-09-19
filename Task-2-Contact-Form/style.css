@@ -31,6 +31,10 @@ main {
     justify-content: center;
 }
 
+button {
+    border: none;
+}
+
 .contact_box {
     background-color: var(--emerald-100);
     padding: 32px;
@@ -40,7 +44,7 @@ main {
 
 header {
     text-align: center;
-    margin-bottom: 64px;
+    margin-bottom: 56px;
 }
 
 .main_title {
@@ -109,4 +113,25 @@ textarea:focus {
 .textarea_label_up {
     color: var(--emerald-800);
     top: -10px;
+}
+
+.submit_container {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.submit_btn {
+    background-color: var(--emerald-600);
+    color: var(--emerald-50);
+    padding: 12px 32px;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px var(--emerald-500);
+    cursor: pointer;
+    transition: box-shadow 0.2s ease;
+}
+
+.submit_btn:hover {
+    box-shadow: 0px 2px 8px var(--emerald-700);
 }
