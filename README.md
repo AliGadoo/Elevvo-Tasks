@@ -54,14 +54,14 @@ Key points:
 ---
 
 
-## Task 2: Build a One-Page Website for a Task App
+## Task 3: Build a One-Page Website for a Task App
 
 ### 📌 Description
 
 Create a full web page for a fictional app called TaskFlow – a tool that helps people organize their tasks.
 The page must include : 
 
-* A top section with the app name, a short message, and a buttox
+* A top section with the app name, a short message, and a button
 * A section that shows 3 features of the app (each with an icon and description)
 * A section with 2–3 reviews or quotes from happy user
 * A section with 3 pricing options (for example: Free, Pro, Team)
@@ -78,3 +78,24 @@ The page must include :
 
 ---
 
+## Task 4: Create a Personal Blog Homepage
+
+### 📌 Description
+
+* Build a homepage for a personal blog showing blog posts in a card layout
+* Add a simple header with the blog title
+* Add a section that displays blog post cards (title, image, short description, and date)
+* Add a category filter to switch between types of posts (e.g., Tech, Travel, Food)
+* Limit the number of visible posts to a specific number pre page
+
+### 🛠️ Tools & Technologies
+
+* **HTML**
+* **Tailwind CSS**
+* **JavaScript**
+
+### 🚀 Live Demo
+
+[Click here to view the project](https://splendid-marigold-4b7d3f.netlify.app/)
+
+---
