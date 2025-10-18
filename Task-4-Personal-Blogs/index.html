@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Blogs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer components {
+        .inactive {
+          @apply text-emerald-800 border-emerald-800 bg-emerald-50 border-2 transition duration-200 hover:bg-emerald-100;
+        }
+        .active {
+          @apply bg-emerald-800 text-emerald-50 transition duration-200 shadow-md;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-emerald-50 text-emerald-800 font-mono">
+    <header class="bg-emerald-600 text-emerald-50 shadow-lg">
+      <div class="container mx-auto text-center py-8">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold">
+          My Personal Blogs
+        </h1>
+        <p class="md:text-xl mt-4">Write your Personal Blogs and manage them</p>
+      </div>
+    </header>
+    <main class="container mt-10 mx-auto px-4">
+      <div class="flex justify-center mb-6">
+        <input
+          class="border-2 border-emerald-800 text-emerald-800 rounded-md px-4 py-2 text-lg w-full max-w-md focus:ring-emerald-600 focus:border-emerald-600"
+          type="text"
+          id="searchbar"
+          placeholder="Search Blogs"
+        />
+      </div>
+
+      <div class="flex justify-center gap-4 mt-6 flex-wrap">
+        <button
+          class="filter-btn active px-4 py-2 rounded-2xl shadow"
+          data-category="all"
+        >
+          All
+        </button>
+        <button
+          class="filter-btn inactive px-4 py-2 rounded-2xl shadow"
+          data-category="tech"
+        >
+          Tech
+        </button>
+        <button
+          class="filter-btn inactive px-4 py-2 rounded-2xl shadow"
+          data-category="travel"
+        >
+          Travel
+        </button>
+        <button
+          class="filter-btn inactive px-4 py-2 rounded-2xl shadow"
+          data-category="food"
+        >
+          Food
+        </button>
+      </div>
+
+      <section
+        id="posts-container"
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10"
+      ></section>
+
+      <section
+        class="pagination flex justify-center items-center gap-6 mt-12 pt-6 border-t border-emerald-300"
+      >
+        <button
+          id="prev-btn"
+          disabled
+          class="px-5 py-2 rounded-lg bg-emerald-600 text-white font-bold disabled:bg-emerald-300 transition duration-150 shadow-md hover:bg-emerald-700"
+        >
+          &laquo; Previous
+        </button>
+        <span id="page-info" class="text-lg font-medium text-emerald-600"
+          >Page 1 of 1</span
+        >
+        <button
+          id="next-btn"
+          disabled
+          class="px-5 py-2 rounded-lg bg-emerald-600 text-white font-bold disabled:bg-emerald-300 transition duration-150 shadow-md hover:bg-emerald-700"
+        >
+          Next &raquo;
+        </button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -58,7 +58,7 @@ Key points:
 
 ### 📌 Description
 
-Create a full web page for a fictional app called TaskFlow – a tool that helps people organize their tasks. 
+Create a full web page for a fictional app called TaskFlow – a tool that helps people organize their tasks.
 The page must include : 
 
 * A top section with the app name, a short message, and a buttox
