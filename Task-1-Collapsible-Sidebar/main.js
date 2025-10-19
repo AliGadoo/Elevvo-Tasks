@@ -9,8 +9,8 @@ toggle_btn.onclick = () => {
   }
 };
 
-sidebar.addEventListener("focusout", (e) => {
-  if (!sidebar.contains(e.relatedTarget)) {
+document.addEventListener("click", (e) => {
+  if (!sidebar.contains(e.target) && e.target !== toggle_btn) {
     sidebar.classList.remove("extended_sidebar");
     for (const link of allLinks) {
       link.classList.remove("expanded_links");
